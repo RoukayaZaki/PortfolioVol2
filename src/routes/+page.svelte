@@ -1,59 +1,80 @@
 <script>
-	import Counter from './Counter.svelte';
-	import welcome from '$lib/images/svelte-welcome.webp';
-	import welcome_fallback from '$lib/images/svelte-welcome.png';
+	import profilePic from './../lib/images/profile.jpg';
+	import leftQuote from "./../lib/images/left-quotes-sign.png";
+	import Projects from './projects.svelte';
+	import Bio from './bio.svelte';
+
+
 </script>
 
 <svelte:head>
 	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
+	<meta name="description" content="Portfolio" />
 </svelte:head>
 
-<section>
-	<h1>
-		<span class="welcome">
-			<picture>
-				<source srcset={welcome} type="image/webp" />
-				<img src={welcome_fallback} alt="Welcome" />
-			</picture>
-		</span>
-
-		to your new<br />SvelteKit app
-	</h1>
-
-	<h2>
-		try editing <strong>src/routes/+page.svelte</strong>
-	</h2>
-
-	<Counter />
+<section id="home">
+	<div class="portrait-container">
+		<img src={profilePic} alt="My Portrait" />
+	</div>
+	<h1>Hello, I'm Roukaya</h1>
+	<p>
+		I am a student at Innopolis University pursuing a degree in Computer Science. I have a keen
+		interest in the world of technology and am constantly exploring its various facets.
+	</p>
+</section>
+<Bio />
+<Projects />
+<section id="quote">
+    <img src={leftQuote} alt="Quotation Marks" />
+    <p>
+      You are too concerned about what was and what will be. There is a saying:
+      Yesterday is history, tomorrow is a mystery, but today is a gift.
+    </p>
+    <p>That's why they call it the present.</p>
+    <h3>-Master Oogway</h3>
 </section>
 
 <style>
-	section {
+	#home {
+		background-color: rgba(240, 217, 249, 0.4);
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
 		align-items: center;
-		flex: 0.6;
+		justify-content: center;
+		text-align: center;
+		min-height: 80vh;
+		padding-top: 60px;
+		border-radius: 20px;
+		height: 400px;
+		width: 1600px;
+		color: #20174b;
+		margin-bottom: 80px;
+		margin-top: 50px;
 	}
 
-	h1 {
-		width: 100%;
+	.portrait-container {
+		width: 400px;
+		height: 400px;
+		overflow: hidden;
+		border-radius: 50%;
+		margin-bottom: 20px;
+		animation: portrait-move 2s infinite alternate;
 	}
 
-	.welcome {
-		display: block;
-		position: relative;
-		width: 100%;
-		height: 0;
-		padding: 0 0 calc(100% * 495 / 2048) 0;
-	}
-
-	.welcome img {
-		position: absolute;
+	.portrait-container img {
 		width: 100%;
 		height: 100%;
-		top: 0;
-		display: block;
+		object-fit: cover;
+	}
+	@keyframes portrait-move {
+		0% {
+			transform: translateY(0);
+		}
+		50% {
+			transform: translateY(-10px);
+		}
+		100% {
+			transform: translateY(0);
+		}
 	}
 </style>
