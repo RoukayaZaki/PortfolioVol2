@@ -4,11 +4,11 @@
 <header>
 	<nav>
 		<ul>
-			<li><a href="/">Home</a></li>
-			<li><a href="/#bio">Bio</a></li>
-			<li><a href="/#quote">Quote</a></li>
-			<li><a href="/Comic">Comic</a></li>
-			<li><a href="/#contact">Contact</a></li>
+			<li><a href="{base}/">Home</a></li>
+			<li><a href="{base}/#bio">Bio</a></li>
+			<li><a href="{base}/#quote">Quote</a></li>
+			<li><a href="{base}/Comic">Comic</a></li>
+			<li><a href="{base}/#contact">Contact</a></li>
 		</ul>
 	</nav>
 </header>
