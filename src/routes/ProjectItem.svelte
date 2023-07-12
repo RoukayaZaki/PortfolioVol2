@@ -13,7 +13,7 @@
 <li class="project-item">
 	<a href={project.link}>
 		<div class="project-image">
-			<img src={{ base } + project.img} alt={project.alt} />
+			<img src={{ base }.contact(project.img)} alt={project.alt} />
 			<div class="project-details">
 				<h3>{project.title}</h3>
 				<p class="description">{project.description}</p>
