@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { base } from '$app/paths';
+
 	export let project: {
 		link: string; // link to the github repo
 		img: string; // image relative path
@@ -11,7 +13,7 @@
 <li class="project-item">
 	<a href={project.link}>
 		<div class="project-image">
-			<img src={project.img} alt={project.alt} />
+			<img src={{ base } + project.img} alt={project.alt} />
 			<div class="project-details">
 				<h3>{project.title}</h3>
 				<p class="description">{project.description}</p>
