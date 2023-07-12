@@ -30,7 +30,6 @@ body, h1, h2, h3, p, ul, li {
 	background-size: 1900px 950px; 
 	background-position: center top;
 	background-image: url("./../lib/images/background1.png");
-
 	
   }
   
@@ -96,31 +95,7 @@ body, h1, h2, h3, p, ul, li {
 	background-color: #9663EC;
   }
   
-  .install-button {
-	display: inline-block;
-	padding: 10px 20px;
-	color: #182036;
-	background-color: #F0D9F9;
-	text-decoration: none;
-	border-radius: 5px;
-	transition: background-color 0.3s ease;
-  }
-  
-  #bio {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: flex-start; 
-	
-	min-height: 75vh;
-	padding-top: 60px;
-	border-radius: 20px;
-	height: 400px;
-	width: 1600px;
-	color: #F0D9F9;
-	margin-top: 90px;
-  }
-  
+ 
   #quote {
 	display: inline-block;
 	flex-direction: column;

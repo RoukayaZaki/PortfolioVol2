@@ -1,31 +1,31 @@
 <script lang="ts">
 	import ProjectItem from './ProjectItem.svelte';
-    import cv from './../lib/RoukayaMohammed.pdf'
+	import cv from './../lib/RoukayaMohammed.pdf';
 	const projects = [
 		{
 			link: 'https://github.com/InnoSWP/BS21-08-CV-Parser',
-			img: './../lib/images/project-img1.png',
+			img: '/project-img1.png',
 			alt: 'Project 1',
 			title: 'CV Parser',
 			description: 'A web application to parse CVs and extract info.'
 		},
 		{
 			link: 'https://github.com/RoukayaZaki/ChuckJokes',
-			img: './../../static/project-img2.png',
+			img: '/project-img2.png',
 			alt: 'Project 2',
 			title: 'Chuck Norris',
 			description: "A flutter application displaying Chuck Norris' jokes."
 		},
 		{
 			link: 'https://github.com/MostafaKhaled2017/Flutter_Course_iExtract',
-			img: './../../static/project-img3.png',
+			img: '/project-img3.png',
 			alt: 'Project 3',
 			title: 'Fix My English',
 			description: 'A flutter application to highlight writing style mistakes.'
 		},
 		{
 			link: 'https://github.com/RoukayaZaki/Accompaniment-Generation',
-			img: './../../static/project-img4.jpg',
+			img: '/project-img4.jpg',
 			alt: 'Project 4',
 			title: 'Accompaniment Generation',
 			description: 'An evolutionary algorithm to generate accompaniment to a given melody.'
@@ -63,5 +63,15 @@
 		display: flex;
 		flex-wrap: wrap;
 		gap: 20px;
+	}
+	.install-button {
+		display: inline-block;
+		padding: 10px 20px;
+		color: #182036;
+		background-color: #f0d9f9;
+		text-decoration: none;
+		border-radius: 5px;
+		transition: background-color 0.3s ease;
+        margin-bottom: 30px;
 	}
 </style>

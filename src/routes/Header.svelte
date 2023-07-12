@@ -6,20 +6,17 @@
 	<nav>
 		<ul>
 			<li><a href="/">Home</a></li>
-			<li><a href="#bio">Bio</a></li>
-			<li><a href="#quote">Quote</a></li>
+			<li><a href="/#bio">Bio</a></li>
+			<li><a href="/#quote">Quote</a></li>
 			<li><a href="/Comic">Comic</a></li>
-			<li><a href="#contact">Contact</a></li>
+			<li><a href="/#contact">Contact</a></li>
 		</ul>
 	</nav>
 </header>
 
 <style>
 	header {
-		display: flex;
 		align-items: center;
-		flex-direction: column;
-		display: flex;
 		justify-content: center;
 		color: #182036;
 		background-color: rgba(240, 217, 249, 0.4);
@@ -28,6 +25,7 @@
 		position: fixed;
 		top: 0;
 		z-index: 999;
+		position: fixed;
 	}
 
 	nav ul {

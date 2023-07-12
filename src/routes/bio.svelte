@@ -1,6 +1,6 @@
 <script lang="ts">
-
 </script>
+
 <svelte:head>
 	<title>Bio</title>
 	<meta name="Bio" content="Roukaya's Bio" />
@@ -19,13 +19,25 @@
 			take on new challenges, learn from experienced mentors, and continue growing as a software
 			developer.
 		</p>
-		
 	</div>
 </section>
 
 <style>
+	#bio {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+
+		padding-top: 60px;
+		border-radius: 20px;
+		width: 1600px;
+		color: #f0d9f9;
+		margin-top: 90px;
+	}
+
 	.projects-paragraph {
 		max-width: 1250px;
 		text-align: justify;
-	} 
+	}
 </style>

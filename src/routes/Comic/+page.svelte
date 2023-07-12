@@ -2,7 +2,6 @@
 <script lang="ts">
 	import { formatDistanceToNow } from 'date-fns';
 	import { onMount } from 'svelte';
-
 	interface Comic {
 		month: string;
 		num: number;
@@ -48,15 +47,19 @@
 		}
 	});
 </script>
+<body>
+	<main>
+		<h2>Comic</h2>
+		<img id="xkcd-comic-image" src={comicImage} alt="" />
+		<p id="xkcd-comic-title">{comicTitle}</p>
+		<p id="xkcd-comic-date">{comicDate}</p>
+	</main>
 
-<main>
-	<h2>Comic</h2>
-	<img id="xkcd-comic-image" src={comicImage} alt="" />
-	<p id="xkcd-comic-title">{comicTitle}</p>
-	<p id="xkcd-comic-date">{comicDate}</p>
-</main>
+</body>
+
 
 <style>
+	
 	h2,
 	p {
 		margin: 0;

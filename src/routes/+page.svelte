@@ -12,6 +12,7 @@
 	<meta name="description" content="Portfolio" />
 </svelte:head>
 
+
 <section id="home">
 	<div class="portrait-container">
 		<img src={profilePic} alt="My Portrait" />
@@ -25,16 +26,17 @@
 <Bio />
 <Projects />
 <section id="quote">
-    <img src={leftQuote} alt="Quotation Marks" />
-    <p>
-      You are too concerned about what was and what will be. There is a saying:
-      Yesterday is history, tomorrow is a mystery, but today is a gift.
-    </p>
-    <p>That's why they call it the present.</p>
-    <h3>-Master Oogway</h3>
+	<img src={leftQuote} alt="Quotation Marks" />
+	<p>
+	  You are too concerned about what was and what will be. There is a saying:
+	  Yesterday is history, tomorrow is a mystery, but today is a gift.
+	</p>
+	<p>That's why they call it the present.</p>
+	<h3>-Master Oogway</h3>
 </section>
 
 <style>
+	
 	#home {
 		background-color: rgba(240, 217, 249, 0.4);
 		display: flex;
