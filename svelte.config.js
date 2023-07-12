@@ -11,7 +11,7 @@ const config = {
 	kit: {
 		adapter: adapter(),
 		paths: {
-			base: dev ? '' : '	/PortfolioVol2'
+			base: dev ? '' : '/PortfolioVol2'
 		}
 	}
 };
