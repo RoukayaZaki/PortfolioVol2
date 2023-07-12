@@ -2,6 +2,7 @@
 <script lang="ts">
 	import { formatDistanceToNow } from 'date-fns';
 	import { onMount } from 'svelte';
+	import { base } from '$app/paths';
 	interface Comic {
 		month: string;
 		num: number;
@@ -16,7 +17,7 @@
 		day: string;
 	}
 
-	let comicImage = '/No-Image-Placeholder.svg';
+	let comicImage = `${base}/No-Image-Placeholder.svg`;
 	let comicTitle = '';
 	let comicDate = '';
 
@@ -37,7 +38,7 @@
 				parseInt(comic.day, 10)
 			);
 
-			comicImage = comic.img || 'assets/No-Image-Placeholder.svg';
+			comicImage = comic.img || `${base}/No-Image-Placeholder.svg`;
 			comicTitle = comic.safe_title;
 
 			const timeAgo = formatDistanceToNow(releaseDate);
