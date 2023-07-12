@@ -1,37 +1,37 @@
-name: Build and deploy
-
+name: Build and Deploy
 on:
   push:
     branches:
-      - main
-
-permissions:
-  contents: write
+      - main # Replace 'main' with your default branch name
 
 jobs:
-  build-and-deploy:
-    name: Build the site and deploy to Pages
+  build:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v2
 
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v2
         with:
-          node-version: '16'
-          cache: 'npm'
+          node-version: 14
 
       - name: Install dependencies
         run: npm ci
 
-      - name: Lint
+      - name: Linting
         run: npm run lint
+        continue-on-error: false
 
-      - name: Build website
+      - name: Checking
+        run: npm run check
+        continue-on-error: false
+
+      - name: Build
         run: npm run build
 
-      - name: Deploy to Pages 
-        uses: JamesIves/github-pages-deploy-action@v4
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          folder: build
+          publish_dir: /build
