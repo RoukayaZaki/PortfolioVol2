@@ -16,7 +16,7 @@
 		day: string;
 	}
 
-	let comicImage = 'assets/No-Image-Placeholder.svg';
+	let comicImage = '/No-Image-Placeholder.svg';
 	let comicTitle = '';
 	let comicDate = '';
 
