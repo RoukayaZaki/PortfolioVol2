@@ -6,8 +6,8 @@
 		title: string; // title of the project
 		description: string; // description of the project
 	};
-   
 </script>
+
 <li class="project-item">
 	<a href={project.link}>
 		<div class="project-image">
@@ -19,8 +19,8 @@
 		</div>
 	</a>
 </li>
-<style>
 
+<style>
 	.project-item {
 		width: 300px;
 		height: 300px;
@@ -63,5 +63,4 @@
 	.description {
 		padding: 5px;
 	}
-
 </style>

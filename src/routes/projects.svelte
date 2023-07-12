@@ -72,6 +72,6 @@
 		text-decoration: none;
 		border-radius: 5px;
 		transition: background-color 0.3s ease;
-        margin-bottom: 30px;
+		margin-bottom: 30px;
 	}
 </style>

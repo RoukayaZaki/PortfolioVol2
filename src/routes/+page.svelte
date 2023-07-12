@@ -1,17 +1,14 @@
 <script>
 	import profilePic from './../lib/images/profile.jpg';
-	import leftQuote from "./../lib/images/left-quotes-sign.png";
+	import leftQuote from './../lib/images/left-quotes-sign.png';
 	import Projects from './projects.svelte';
 	import Bio from './bio.svelte';
-
-
 </script>
 
 <svelte:head>
 	<title>Home</title>
 	<meta name="description" content="Portfolio" />
 </svelte:head>
-
 
 <section id="home">
 	<div class="portrait-container">
@@ -28,15 +25,14 @@
 <section id="quote">
 	<img src={leftQuote} alt="Quotation Marks" />
 	<p>
-	  You are too concerned about what was and what will be. There is a saying:
-	  Yesterday is history, tomorrow is a mystery, but today is a gift.
+		You are too concerned about what was and what will be. There is a saying: Yesterday is history,
+		tomorrow is a mystery, but today is a gift.
 	</p>
 	<p>That's why they call it the present.</p>
 	<h3>-Master Oogway</h3>
 </section>
 
 <style>
-	
 	#home {
 		background-color: rgba(240, 217, 249, 0.4);
 		display: flex;

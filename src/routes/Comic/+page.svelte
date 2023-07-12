@@ -16,8 +16,8 @@
 		day: string;
 	}
 
-	let comicImage: string = 'assets/No-Image-Placeholder.svg';
-	let comicTitle: string = '';
+	let comicImage = 'assets/No-Image-Placeholder.svg';
+	let comicTitle = '';
 	let comicDate = '';
 
 	onMount(async () => {
@@ -47,6 +47,7 @@
 		}
 	});
 </script>
+
 <body>
 	<main>
 		<h2>Comic</h2>
@@ -54,12 +55,9 @@
 		<p id="xkcd-comic-title">{comicTitle}</p>
 		<p id="xkcd-comic-date">{comicDate}</p>
 	</main>
-
 </body>
 
-
 <style>
-	
 	h2,
 	p {
 		margin: 0;
@@ -90,14 +88,12 @@
 		background-position: center top;
 	}
 
-	
-
 	main {
 		margin-top: 25px;
 		padding: 20px;
 	}
 
-	h2{
+	h2 {
 		margin-bottom: 10px;
 	}
 </style>
