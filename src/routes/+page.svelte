@@ -3,6 +3,7 @@
 	import leftQuote from './../lib/images/left-quotes-sign.png';
 	import Projects from './projects.svelte';
 	import Bio from './bio.svelte';
+	import Contact from './Contact.svelte';
 </script>
 
 <svelte:head>
@@ -31,6 +32,7 @@
 	<p>That's why they call it the present.</p>
 	<h3>-Master Oogway</h3>
 </section>
+<Contact />
 
 <style>
 	#home {
